@@ -11,6 +11,9 @@
 		ADA643DC27B3009E00057543 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA643DB27B3009E00057543 /* ContentView.swift */; };
 		ADA643DE27B3009F00057543 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA643DD27B3009F00057543 /* Assets.xcassets */; };
 		ADA643E127B3009F00057543 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA643E027B3009F00057543 /* Preview Assets.xcassets */; };
+		ADA643EE27B3013A00057543 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA643ED27B3013A00057543 /* API.swift */; };
+		ADA643F027B3018200057543 /* API+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA643EF27B3018200057543 /* API+Extensions.swift */; };
+		ADA643F227B302FA00057543 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA643F127B302FA00057543 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		ADA643DB27B3009E00057543 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ADA643DD27B3009F00057543 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADA643E027B3009F00057543 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ADA643ED27B3013A00057543 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		ADA643EF27B3018200057543 /* API+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Extensions.swift"; sourceTree = "<group>"; };
+		ADA643F127B302FA00057543 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,12 @@
 		ADA643D827B3009E00057543 /* LocalWeather */ = {
 			isa = PBXGroup;
 			children = (
+				ADA643EB27B3010800057543 /* LottieAnimations */,
+				ADA643EA27B3010100057543 /* ViewModels */,
+				ADA643E927B300FB00057543 /* Views */,
+				ADA643E827B300F600057543 /* Models */,
+				ADA643EC27B3012D00057543 /* Network */,
+				ADA643E727B300D900057543 /* Helpers */,
 				ADA643D927B3009E00057543 /* LocalWeatherApp.swift */,
 				ADA643DB27B3009E00057543 /* ContentView.swift */,
 				ADA643DD27B3009F00057543 /* Assets.xcassets */,
@@ -65,6 +77,51 @@
 				ADA643E027B3009F00057543 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ADA643E727B300D900057543 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ADA643E827B300F600057543 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ADA643E927B300FB00057543 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ADA643EA27B3010100057543 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ADA643EB27B3010800057543 /* LottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LottieAnimations;
+			sourceTree = "<group>";
+		};
+		ADA643EC27B3012D00057543 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ADA643ED27B3013A00057543 /* API.swift */,
+				ADA643EF27B3018200057543 /* API+Extensions.swift */,
+				ADA643F127B302FA00057543 /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA643F027B3018200057543 /* API+Extensions.swift in Sources */,
 				ADA643DC27B3009E00057543 /* ContentView.swift in Sources */,
+				ADA643F227B302FA00057543 /* NetworkManager.swift in Sources */,
+				ADA643EE27B3013A00057543 /* API.swift in Sources */,
 				ADA643DA27B3009E00057543 /* LocalWeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
