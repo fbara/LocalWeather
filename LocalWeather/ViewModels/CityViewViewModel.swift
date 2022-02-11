@@ -14,7 +14,7 @@ final class CityViewViewModel: ObservableObject {
     @Published var weather = WeatherResponse.empty()
     @Published var city: String = "Oswego" {
         didSet {
-            // call 'get location' here
+            getLocation()
         }
     }
     
@@ -71,7 +71,7 @@ final class CityViewViewModel: ObservableObject {
     }
     
     var dewpoint: String {
-        return String(format: "0.0f%%", weather.current.dew_point)
+        return String(format: "%0.1f%", weather.current.dew_point)
     }
     
     func getTimeFor(timestamp: Int) -> String {
@@ -91,7 +91,7 @@ final class CityViewViewModel: ObservableObject {
     }
     
     func getTempFor(temp: Double) -> String {
-        return String(format: "%0.1f", temp)
+        return String(format: "%0.0f", temp)
     }
     
     func getWeather(coord: CLLocationCoordinate2D?) {
@@ -124,7 +124,7 @@ final class CityViewViewModel: ObservableObject {
             return "dayClearSky"
         case "01n":
             return "nightClearsky"
-        case "82d" :
+        case "02d" :
             return "dayFewClouds"
         case "02n":
             return "nightFewClouds"
