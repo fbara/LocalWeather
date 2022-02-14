@@ -15,11 +15,12 @@ struct ContentView: View {
         
         ZStack(alignment: .bottom) {
             VStack(spacing: 0) {
-                MenuHeaderView(cityVM: cityVM)
+                MenuHeaderView(cityVM: cityVM).padding()
                 
                 ScrollView(showsIndicators: false) {
                     CityView(cityVM: cityVM)
                 }
+                .padding(.top, 10)
             }
             .padding(.top, 40)
         }
